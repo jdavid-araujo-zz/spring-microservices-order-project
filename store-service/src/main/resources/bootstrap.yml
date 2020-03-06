@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: store-service
+  profiles:    active:    - default
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - env
+        - info
